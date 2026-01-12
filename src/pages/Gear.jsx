@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import GearCard from '@/components/GearCard';
 
 const cameras = [
   {
