@@ -53,9 +53,9 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.1 }}
             className="text-5xl sm:text-7xl md:text-8xl font-bold tracking-tight mb-6"
           >
-            <span className="text-white">Visual </span>
+            <span className="text-white">From My </span>
             <span className="bg-gradient-to-r from-orange-400 to-yellow-500 bg-clip-text text-transparent">
-              Stories
+              Lens
             </span>
           </motion.h1>
 
@@ -76,13 +76,13 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.5 }}
           >
-            <Link
-              to={createPageUrl('Home') + '#gallery'}
+            <button
+              onClick={() => document.getElementById('gallery')?.scrollIntoView({ behavior: 'smooth' })}
               className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-orange-500 to-yellow-500 text-white font-medium hover:from-orange-600 hover:to-yellow-600 transition-all shadow-lg shadow-orange-500/30"
             >
               View My Work
               <ArrowRight className="w-5 h-5" />
-            </Link>
+            </button>
           </motion.div>
         </div>
       </section>
