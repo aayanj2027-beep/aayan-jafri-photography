@@ -133,7 +133,6 @@ export default function About() {
           className="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-sm p-8 md:p-12"
         >
           <div className="flex items-center gap-3 mb-8">
-            <span className="text-3xl drop-shadow-lg">📅</span>
             <h2 className="text-2xl font-bold text-white">My Journey</h2>
           </div>
 
