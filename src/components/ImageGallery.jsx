@@ -41,6 +41,7 @@ export default function ImageGallery({ images }) {
                 alt={img.title || `Photo ${index + 1}`}
                 className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"
                 loading="lazy"
+                style={{ imageRendering: 'high-quality' }}
               />
               
               {/* Overlay on hover */}
@@ -96,6 +97,7 @@ export default function ImageGallery({ images }) {
               src={images[selectedIndex].url}
               alt=""
               className="max-h-[85vh] max-w-[90vw] object-contain rounded-lg"
+              style={{ imageRendering: 'high-quality' }}
               onClick={(e) => e.stopPropagation()}
             />
 
