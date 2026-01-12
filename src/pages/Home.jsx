@@ -40,10 +40,10 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-pink-950/40 border border-pink-500/30 backdrop-blur-sm mb-8"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-950/40 border border-orange-500/30 backdrop-blur-sm mb-8"
           >
-            <Sparkles className="w-4 h-4 text-pink-400" />
-            <span className="text-sm text-pink-300">16 y/o Photographer</span>
+            <Sparkles className="w-4 h-4 text-orange-400" />
+            <span className="text-sm text-orange-300">16 y/o Photographer</span>
           </motion.div>
 
           {/* Main Title */}
@@ -54,7 +54,7 @@ export default function Home() {
             className="text-5xl sm:text-7xl md:text-8xl font-bold tracking-tight mb-6"
           >
             <span className="text-white">Visual </span>
-            <span className="bg-gradient-to-r from-pink-400 to-pink-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-orange-400 to-yellow-500 bg-clip-text text-transparent">
               Stories
             </span>
           </motion.h1>
@@ -78,7 +78,7 @@ export default function Home() {
           >
             <Link
               to={createPageUrl('Home') + '#gallery'}
-              className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-pink-500 to-pink-600 text-white font-medium hover:from-pink-600 hover:to-pink-700 transition-all shadow-lg shadow-pink-500/20"
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-orange-500 to-yellow-500 text-white font-medium hover:from-orange-600 hover:to-yellow-600 transition-all shadow-lg shadow-orange-500/30"
             >
               View My Work
               <ArrowRight className="w-5 h-5" />

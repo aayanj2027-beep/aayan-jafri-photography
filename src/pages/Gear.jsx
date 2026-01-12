@@ -57,7 +57,7 @@ export default function Gear() {
           className="mb-16"
         >
           <div className="flex items-center gap-3 mb-8">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-pink-500 to-pink-600 flex items-center justify-center">
+            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-orange-500 to-yellow-500 flex items-center justify-center">
               <span className="text-2xl">📷</span>
             </div>
             <h2 className="text-2xl font-bold text-white">Camera Bodies</h2>
@@ -75,7 +75,7 @@ export default function Gear() {
                 <div className="flex items-start gap-4">
                   <div className={`w-14 h-14 rounded-xl flex items-center justify-center ${
                     camera.isPrimary 
-                      ? 'bg-gradient-to-br from-pink-950/60 to-pink-900/40 border border-pink-500/30' 
+                      ? 'bg-gradient-to-br from-orange-950/60 to-orange-900/40 border border-orange-500/30' 
                       : 'bg-white/5 border border-white/10'
                   }`}>
                     <span className="text-2xl">📷</span>
@@ -83,7 +83,7 @@ export default function Gear() {
                   <div className="flex-1">
                     {camera.isPrimary && (
                       <div className="flex items-center gap-2 mb-2">
-                        <span className="text-xs text-pink-400 font-semibold uppercase tracking-wider">
+                        <span className="text-xs text-orange-400 font-semibold uppercase tracking-wider">
                           {camera.badge}
                         </span>
                         <span className="text-yellow-400">⭐</span>
@@ -110,7 +110,7 @@ export default function Gear() {
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           <div className="flex items-center gap-3 mb-8">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center">
+            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-yellow-500 to-orange-500 flex items-center justify-center">
               <span className="text-2xl">🔍</span>
             </div>
             <h2 className="text-2xl font-bold text-white">Lenses</h2>
@@ -128,7 +128,7 @@ export default function Gear() {
                 <div className="flex items-start gap-4">
                   <div className={`w-14 h-14 rounded-xl flex items-center justify-center flex-shrink-0 ${
                     lens.isPrimary 
-                      ? 'bg-gradient-to-br from-pink-950/60 to-pink-900/40 border border-pink-500/30' 
+                      ? 'bg-gradient-to-br from-orange-950/60 to-orange-900/40 border border-orange-500/30' 
                       : 'bg-white/5 border border-white/10'
                   }`}>
                     <span className="text-2xl">🔍</span>
@@ -136,12 +136,12 @@ export default function Gear() {
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-2 mb-2 flex-wrap">
                       <span className={`text-xs font-semibold uppercase tracking-wider ${
-                        lens.isPrimary ? 'text-pink-400' : 'text-cyan-400'
+                        lens.isPrimary ? 'text-orange-400' : 'text-blue-400'
                       }`}>
                         {lens.badge}
                       </span>
                       {lens.isPrimary && (
-                        <span className="px-2 py-0.5 rounded-full bg-pink-500/20 border border-pink-500/30 text-pink-300 text-xs font-medium">
+                        <span className="px-2 py-0.5 rounded-full bg-orange-500/20 border border-orange-500/30 text-orange-300 text-xs font-medium">
                           PRIMARY
                         </span>
                       )}

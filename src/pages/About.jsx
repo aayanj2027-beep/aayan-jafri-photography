@@ -39,7 +39,7 @@ export default function About() {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="text-5xl sm:text-6xl font-bold mb-4"
         >
-          <span className="bg-gradient-to-r from-pink-400 to-pink-600 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-orange-400 to-yellow-500 bg-clip-text text-transparent">
             Aayan Jafri
           </span>
         </motion.h1>
@@ -84,7 +84,7 @@ export default function About() {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.3, delay: 0.5 + index * 0.05 }}
-              className="px-4 py-2 rounded-full bg-pink-950/40 border border-pink-500/30 text-pink-300 text-sm"
+              className="px-4 py-2 rounded-full bg-orange-950/40 border border-orange-500/30 text-orange-300 text-sm"
             >
               {skill}
             </motion.span>
@@ -121,12 +121,12 @@ export default function About() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.7 }}
-          className="rounded-3xl border border-white/10 bg-gradient-to-br from-pink-950/20 via-purple-950/20 to-blue-950/20 backdrop-blur-sm p-8 mb-16"
+          className="rounded-3xl border border-white/10 bg-gradient-to-br from-slate-900/20 via-gray-900/20 to-slate-800/20 backdrop-blur-sm p-8 mb-16"
         >
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
               <div key={stat.label} className="text-center">
-                <div className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent mb-2">
+                <div className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-orange-400 to-yellow-500 bg-clip-text text-transparent mb-2">
                   {stat.value}
                 </div>
                 <div className="text-white/60 text-sm">{stat.label}</div>
