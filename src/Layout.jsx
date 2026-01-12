@@ -33,7 +33,7 @@ export default function Layout({ children, currentPageName }) {
               </div>
               <div className="hidden sm:block">
                 <div className="text-white font-semibold text-lg">Aayan Jafri</div>
-                <div className="text-orange-400 text-xs uppercase tracking-wider">Photography</div>
+                <div className="text-orange-400 text-xs uppercase tracking-wider">digital portfolio</div>
               </div>
             </Link>
 
