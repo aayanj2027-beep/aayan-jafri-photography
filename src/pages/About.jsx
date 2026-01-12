@@ -138,13 +138,10 @@ export default function About() {
 
           <div className="space-y-6 text-white/70 leading-relaxed">
             <p>
-              My photography journey began with a hand-me-down Canon T1i and a couple kit lenses. I learned the basics of photography on this camera, but as time passed it became the only factor limiting my growth and my results. After 3 years on that camera I upgraded to the much newer Canon R10 with a much better Sigma lens.
+              My photography journey actually started with a hand-me-down Canon T1i and a couple of kit lenses. I learned all the basics on that camera, but after three years, I felt like the gear was finally starting to limit what I could do and the results I wanted. I eventually upgraded to a Canon R10 with a much better Sigma lens.
             </p>
             <p>
-              With this setup being much more "raw", I discovered a new profound joy for editing in Lightroom. I spent hours changing every little dial and button until I liked what I saw.
-            </p>
-            <p>
-              Today I continue to explore new styles and perspectives, with my latest interest being astrophotography.
+              With this setup being much more "raw," I discovered how much I love the editing process in Lightroom. I can spend hours tweaking every little dial and button until I like what I see. Today, I'm still exploring new perspectives, and my latest interest is diving into astrophotography.
             </p>
           </div>
         </motion.div>
