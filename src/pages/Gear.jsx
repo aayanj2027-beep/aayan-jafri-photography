@@ -57,9 +57,7 @@ export default function Gear() {
           className="mb-16"
         >
           <div className="flex items-center gap-3 mb-8">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-orange-500 to-yellow-500 flex items-center justify-center">
-              <span className="text-2xl">📷</span>
-            </div>
+            <span className="text-3xl drop-shadow-lg">📷</span>
             <h2 className="text-2xl font-bold text-white">Camera Bodies</h2>
           </div>
 
@@ -110,9 +108,7 @@ export default function Gear() {
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           <div className="flex items-center gap-3 mb-8">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-yellow-500 to-orange-500 flex items-center justify-center">
-              <span className="text-2xl">🔍</span>
-            </div>
+            <span className="text-3xl drop-shadow-lg">🔍</span>
             <h2 className="text-2xl font-bold text-white">Lenses</h2>
           </div>
 

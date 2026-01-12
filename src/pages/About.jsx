@@ -144,9 +144,7 @@ export default function About() {
           className="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-sm p-8 md:p-12"
         >
           <div className="flex items-center gap-3 mb-8">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center">
-              <span className="text-2xl">📅</span>
-            </div>
+            <span className="text-3xl drop-shadow-lg">📅</span>
             <h2 className="text-2xl font-bold text-white">My Journey</h2>
           </div>
 
