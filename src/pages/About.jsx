@@ -43,15 +43,7 @@ export default function About() {
           </span>
         </motion.h1>
 
-        {/* Subtitle */}
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-lg text-white/60 mb-12"
-        >
-          16 y/o • Hobbyist
-        </motion.p>
+
 
         {/* Bio */}
         <motion.div
