@@ -1,13 +1,13 @@
-import Home from './pages/Home';
 import About from './pages/About';
 import Gear from './pages/Gear';
+import Home from './pages/Home';
 import __Layout from './Layout.jsx';
 
 
 export const PAGES = {
-    "Home": Home,
     "About": About,
     "Gear": Gear,
+    "Home": Home,
 }
 
 export const pagesConfig = {

@@ -13,7 +13,6 @@ export default function About() {
   ];
 
   const stats = [
-    { label: 'Age', value: '16' },
     { label: 'Years Shooting', value: '3+' },
     { label: 'Photos Taken', value: '10K+' },
   ];
@@ -112,7 +111,7 @@ export default function About() {
           transition={{ duration: 0.6, delay: 0.7 }}
           className="rounded-3xl border border-white/10 bg-gradient-to-br from-slate-900/20 via-gray-900/20 to-slate-800/20 backdrop-blur-sm p-8 mb-16"
         >
-          <div className="grid grid-cols-3 gap-8">
+          <div className="grid grid-cols-2 gap-8">
             {stats.map((stat, index) => (
               <div key={stat.label} className="text-center">
                 <div className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-400 to-cyan-500 bg-clip-text text-transparent mb-2">
