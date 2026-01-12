@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Aperture } from 'lucide-react';
 
 const cameras = [
   {
@@ -108,7 +109,9 @@ export default function Gear() {
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           <div className="flex items-center gap-3 mb-8">
-            <span className="text-3xl drop-shadow-lg">🔍</span>
+            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-orange-500 to-yellow-500 flex items-center justify-center">
+              <Aperture className="w-5 h-5 text-white" />
+            </div>
             <h2 className="text-2xl font-bold text-white">Lenses</h2>
           </div>
 
@@ -127,7 +130,7 @@ export default function Gear() {
                       ? 'bg-gradient-to-br from-orange-950/60 to-orange-900/40 border border-orange-500/30' 
                       : 'bg-white/5 border border-white/10'
                   }`}>
-                    <span className="text-2xl">🔍</span>
+                    <Aperture className={`w-7 h-7 ${lens.isPrimary ? 'text-orange-400' : 'text-white/60'}`} />
                   </div>
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-2 mb-2 flex-wrap">
