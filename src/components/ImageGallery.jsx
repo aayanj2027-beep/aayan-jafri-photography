@@ -33,9 +33,6 @@ export default function ImageGallery({ images }) {
             onClick={() => openLightbox(index)}
           >
             <div className="relative overflow-hidden rounded-2xl bg-white/5 border border-white/10">
-              {/* Glow effect on hover */}
-              <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/0 via-purple-500/0 to-pink-500/0 group-hover:from-cyan-500/20 group-hover:via-purple-500/20 group-hover:to-pink-500/20 transition-all duration-500 z-10" />
-              
               <img
                 src={img.url}
                 alt={img.title || `Photo ${index + 1}`}
