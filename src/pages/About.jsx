@@ -53,10 +53,10 @@ export default function About() {
           className="space-y-4 text-white/70 leading-relaxed mb-12 max-w-3xl"
         >
           <p>
-            Hi. I'm Aayan and I'm currently a 16 year old passionate about photography. I love capturing moments in the world and editing them to my specific taste. What started out as a mild pastime has now grown into a passion that I'm pursuing.
+            Hey, I'm Aayan. I'm a 16-year-old photographer with a passion for capturing the world and editing shots to my own specific style. What started as just a hobby has definitely turned into something much bigger that I'm now pursuing seriously.
           </p>
           <p>
-            I mostly shoot portrait, but I'm always experimenting with different styles. My love for cars has also made it's way into photography, with most of my best shots being those of cars. Most people criticize me for taking pictures of the most random things, but it's those pictures that always turn out the best.
+            I mostly focus on portraits, but I love experimenting with different styles. My interest in cars has also naturally moved into my photography—some of my favorite shots are automotive. People sometimes joke about me taking pictures of 'random' things, but I've found that those usually end up being the best shots.
           </p>
         </motion.div>
 
