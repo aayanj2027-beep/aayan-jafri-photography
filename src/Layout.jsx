@@ -1,47 +1,80 @@
 import React from 'react';
-import GlassNavbar from '@/components/GlassNavbar';
+import { Link } from 'react-router-dom';
+import { createPageUrl } from '@/utils';
+import { Camera, Instagram, Mail } from 'lucide-react';
 
 export default function Layout({ children, currentPageName }) {
+  const navItems = [
+    { name: 'Portfolio', page: 'Home', icon: '🖼️' },
+    { name: 'Gear', page: 'Gear', icon: '⚙️' },
+    { name: 'About', page: 'About', icon: '👤' },
+  ];
+
   return (
-    <div className="min-h-screen bg-[#0a0a0a] text-white overflow-x-hidden">
-      {/* Ambient background gradients */}
+    <div className="min-h-screen bg-[#0d0810] text-white overflow-x-hidden">
+      {/* Subtle gradient background */}
       <div className="fixed inset-0 pointer-events-none overflow-hidden">
-        <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-cyan-500/10 rounded-full blur-[150px]" />
-        <div className="absolute bottom-0 right-1/4 w-[600px] h-[600px] bg-purple-500/10 rounded-full blur-[150px]" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-pink-500/5 rounded-full blur-[200px]" />
+        <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-pink-600/5 rounded-full blur-[150px]" />
+        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-purple-600/5 rounded-full blur-[150px]" />
       </div>
       
-      {/* Grid pattern overlay */}
-      <div 
-        className="fixed inset-0 pointer-events-none opacity-[0.02]"
-        style={{
-          backgroundImage: `linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
-                            linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)`,
-          backgroundSize: '50px 50px'
-        }}
-      />
-      
-      <GlassNavbar currentPage={currentPageName} />
+      {/* Header Navigation */}
+      <header className="relative z-50 border-b border-white/5">
+        <div className="max-w-7xl mx-auto px-6 py-4">
+          <div className="flex items-center justify-between">
+            {/* Logo */}
+            <Link to={createPageUrl('Home')} className="flex items-center gap-3">
+              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-pink-500 to-pink-600 flex items-center justify-center">
+                <Camera className="w-6 h-6 text-white" />
+              </div>
+              <div>
+                <div className="text-white font-semibold text-lg">Aayan Jafri</div>
+                <div className="text-pink-400 text-xs uppercase tracking-wider">Photography</div>
+              </div>
+            </Link>
+
+            {/* Navigation */}
+            <nav className="flex items-center gap-2">
+              {navItems.map((item) => (
+                <Link
+                  key={item.page}
+                  to={createPageUrl(item.page)}
+                  className={`px-4 py-2 rounded-xl text-sm font-medium transition-all ${
+                    currentPageName === item.page
+                      ? 'bg-pink-600/20 text-pink-400 border border-pink-500/30'
+                      : 'text-white/60 hover:text-white hover:bg-white/5 border border-transparent'
+                  }`}
+                >
+                  <span className="mr-2">{item.icon}</span>
+                  {item.name}
+                </Link>
+              ))}
+            </nav>
+
+            {/* Social Links */}
+            <div className="flex items-center gap-3">
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center hover:bg-white/10 transition-colors"
+              >
+                <Instagram className="w-4 h-4" />
+              </a>
+              <a
+                href="mailto:contact@aayanjafri.com"
+                className="w-10 h-10 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center hover:bg-white/10 transition-colors"
+              >
+                <Mail className="w-4 h-4" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
       
       <main className="relative z-10">
         {children}
       </main>
-      
-      {/* Footer */}
-      <footer className="relative z-10 border-t border-white/10 mt-20">
-        <div className="max-w-7xl mx-auto px-6 py-12">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="text-white/40 text-sm">
-              © 2024 Aayan Jafri. All rights reserved.
-            </p>
-            <div className="flex items-center gap-6">
-              <span className="text-white/40 text-sm">Hobbyist Photographer</span>
-              <div className="h-1 w-1 rounded-full bg-white/20" />
-              <span className="text-white/40 text-sm">Based in California</span>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }

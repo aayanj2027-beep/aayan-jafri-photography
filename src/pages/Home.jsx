@@ -1,6 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { createPageUrl } from '@/utils';
 import { motion } from 'framer-motion';
-import { ArrowDown, Sparkles } from 'lucide-react';
+import { Sparkles, ArrowRight } from 'lucide-react';
 import ImageGallery from '@/components/ImageGallery';
 
 const images = [
@@ -31,27 +33,17 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center px-6 pt-24">
-        {/* Hero Background Image */}
-        <div className="absolute inset-0 z-0">
-          <img
-            src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_6964ac45e34a1cc29463b736/b5399a7b4_IMG_8500-2.jpg"
-            alt="Hero"
-            className="w-full h-full object-cover opacity-30"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a] via-[#0a0a0a]/80 to-[#0a0a0a]" />
-        </div>
-
-        <div className="relative z-10 text-center max-w-4xl mx-auto">
+      <section className="relative min-h-[85vh] flex items-center justify-center px-6 py-20">
+        <div className="max-w-4xl mx-auto text-center">
           {/* Badge */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm mb-8"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-pink-950/40 border border-pink-500/30 backdrop-blur-sm mb-8"
           >
-            <Sparkles className="w-4 h-4 text-cyan-400" />
-            <span className="text-sm text-white/70">Hobbyist Photographer</span>
+            <Sparkles className="w-4 h-4 text-pink-400" />
+            <span className="text-sm text-pink-300">16 y/o Photographer</span>
           </motion.div>
 
           {/* Main Title */}
@@ -59,12 +51,11 @@ export default function Home() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1 }}
-            className="text-5xl sm:text-7xl md:text-8xl font-extralight tracking-tight mb-6"
+            className="text-5xl sm:text-7xl md:text-8xl font-bold tracking-tight mb-6"
           >
-            <span className="text-white">AAYAN</span>
-            <br />
-            <span className="bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent font-medium">
-              JAFRI
+            <span className="text-white">Visual </span>
+            <span className="bg-gradient-to-r from-pink-400 to-pink-600 bg-clip-text text-transparent">
+              Stories
             </span>
           </motion.h1>
 
@@ -73,51 +64,32 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="text-lg sm:text-xl text-white/50 font-light max-w-xl mx-auto mb-12"
+            className="text-lg text-white/60 max-w-2xl mx-auto mb-10"
           >
-            Capturing moments through the lens. Automotive, urban, and everything in between.
+            Hey, I'm Aayan! A hobbyist photographer passionate about capturing 
+            landscapes, nature, and aerial perspectives. Every frame tells a story.
           </motion.p>
 
-          {/* Scroll indicator */}
+          {/* CTA Button */}
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.5 }}
-            className="flex flex-col items-center gap-2"
           >
-            <span className="text-xs text-white/40 uppercase tracking-widest">Scroll to explore</span>
-            <motion.div
-              animate={{ y: [0, 8, 0] }}
-              transition={{ duration: 1.5, repeat: Infinity }}
+            <Link
+              to={createPageUrl('Home') + '#gallery'}
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-pink-500 to-pink-600 text-white font-medium hover:from-pink-600 hover:to-pink-700 transition-all shadow-lg shadow-pink-500/20"
             >
-              <ArrowDown className="w-5 h-5 text-white/40" />
-            </motion.div>
+              View My Work
+              <ArrowRight className="w-5 h-5" />
+            </Link>
           </motion.div>
         </div>
       </section>
 
       {/* Gallery Section */}
-      <section className="relative px-6 py-20">
+      <section id="gallery" className="relative px-6 py-20">
         <div className="max-w-7xl mx-auto">
-          {/* Section Header */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="mb-16"
-          >
-            <div className="flex items-center gap-4 mb-4">
-              <div className="h-px flex-1 bg-gradient-to-r from-transparent via-white/20 to-transparent" />
-              <span className="text-xs text-white/40 uppercase tracking-widest">Portfolio</span>
-              <div className="h-px flex-1 bg-gradient-to-r from-transparent via-white/20 to-transparent" />
-            </div>
-            <h2 className="text-3xl sm:text-4xl font-light text-center">
-              <span className="text-white">Selected</span>{' '}
-              <span className="bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">Works</span>
-            </h2>
-          </motion.div>
-
           <ImageGallery images={images} />
         </div>
       </section>
