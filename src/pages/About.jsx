@@ -4,9 +4,9 @@ import { Instagram, Mail } from 'lucide-react';
 
 export default function About() {
   const skills = [
-    'Landscape Photography',
+    'Portrait Photography',
     'Nature & Wildlife',
-    'Drone Aerials',
+    'Automotive Photography',
     'Street Photography',
     'Golden Hour Chasing',
     'Photo Editing',
@@ -16,7 +16,6 @@ export default function About() {
     { label: 'Age', value: '16' },
     { label: 'Years Shooting', value: '3+' },
     { label: 'Photos Taken', value: '10K+' },
-    { label: 'Happy Clients', value: '15+' },
   ];
 
   return (
@@ -108,7 +107,7 @@ export default function About() {
             Instagram
           </a>
           <a
-            href="mailto:contact@aayanjafri.com"
+            href="mailto:aayanjafri73@gmail.com"
             className="flex items-center gap-2 px-6 py-3 rounded-xl bg-white/5 border border-white/10 text-white hover:bg-white/10 transition-colors"
           >
             <Mail className="w-5 h-5" />
@@ -123,7 +122,7 @@ export default function About() {
           transition={{ duration: 0.6, delay: 0.7 }}
           className="rounded-3xl border border-white/10 bg-gradient-to-br from-slate-900/20 via-gray-900/20 to-slate-800/20 backdrop-blur-sm p-8 mb-16"
         >
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-3 gap-8">
             {stats.map((stat, index) => (
               <div key={stat.label} className="text-center">
                 <div className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-orange-400 to-yellow-500 bg-clip-text text-transparent mb-2">

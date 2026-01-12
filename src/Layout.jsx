@@ -5,9 +5,9 @@ import { Camera, Instagram, Mail } from 'lucide-react';
 
 export default function Layout({ children, currentPageName }) {
   const navItems = [
-    { name: 'Portfolio', page: 'Home', icon: '🖼️' },
-    { name: 'Gear', page: 'Gear', icon: '⚙️' },
-    { name: 'About', page: 'About', icon: '👤' },
+    { name: 'Portfolio', page: 'Home' },
+    { name: 'Gear', page: 'Gear' },
+    { name: 'About', page: 'About' },
   ];
 
   return (
@@ -49,8 +49,7 @@ export default function Layout({ children, currentPageName }) {
                       : 'text-white/60 hover:text-white hover:bg-white/5 border border-transparent'
                   }`}
                 >
-                  <span className="mr-2">{item.icon}</span>
-                  <span className="hidden sm:inline">{item.name}</span>
+                  {item.name}
                 </Link>
               ))}
             </nav>
@@ -66,7 +65,7 @@ export default function Layout({ children, currentPageName }) {
                 <Instagram className="w-4 h-4" />
               </a>
               <a
-                href="mailto:contact@aayanjafri.com"
+                href="mailto:aayanjafri73@gmail.com"
                 className="w-10 h-10 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center hover:bg-white/10 transition-colors"
               >
                 <Mail className="w-4 h-4" />
