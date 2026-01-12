@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 export default function Layout({ children, currentPageName }) {
   const navItems = [
-    { name: 'Portfolio', page: 'Home', icon: Image },
+    { name: 'Gallery', page: 'Home', icon: Image },
     { name: 'Gear', page: 'Gear', icon: Settings },
     { name: 'About', page: 'About', icon: User },
   ];
