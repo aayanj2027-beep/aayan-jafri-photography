@@ -23,7 +23,7 @@ const images = [
   { url: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_6964ac45e34a1cc29463b736/0a5baf36a_IMG_8497-2.jpg', title: 'Ferrari Wheel' },
   { url: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_6964ac45e34a1cc29463b736/8cc147676_IMG_8503.jpg', title: 'Ferrari Side' },
   { url: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_6964ac45e34a1cc29463b736/7981eacad_IMG_8505.jpg', title: 'Ferrari Interior' },
-  { url: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6964ad65b4b6031b39646456/324bf1c05_IMG_8506.jpg', title: 'SF90 Headlight' },
+  { url: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_6964ac45e34a1cc29463b736/053df8b46_IMG_8506.jpg', title: 'SF90 Headlight' },
   { url: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_6964ac45e34a1cc29463b736/267469923_IMG_8516-2.jpg', title: 'Ferrari Badge' },
   { url: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_6964ac45e34a1cc29463b736/84eb27faf_IMG_8517.jpg', title: 'White Ferrari' },
   { url: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_6964ac45e34a1cc29463b736/d282c11ce_IMG_8384.jpg', title: 'Ferrari Seat' },
