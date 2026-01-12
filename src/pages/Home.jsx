@@ -40,10 +40,10 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-950/40 border border-orange-500/30 backdrop-blur-sm mb-8"
-          >
-            <Sparkles className="w-4 h-4 text-orange-400" />
-            <span className="text-sm text-orange-300">16 y/o Photographer</span>
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-950/40 border border-blue-500/30 backdrop-blur-sm mb-8"
+            >
+            <Sparkles className="w-4 h-4 text-blue-400" />
+            <span className="text-sm text-blue-300">16 y/o Photographer</span>
           </motion.div>
 
           {/* Main Title */}
@@ -54,7 +54,7 @@ export default function Home() {
             className="text-5xl sm:text-7xl md:text-8xl font-bold tracking-tight mb-6"
           >
             <span className="text-white">From My </span>
-            <span className="bg-gradient-to-r from-orange-400 to-yellow-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-blue-400 to-cyan-500 bg-clip-text text-transparent">
               Lens
             </span>
           </motion.h1>
@@ -78,7 +78,7 @@ export default function Home() {
           >
             <button
               onClick={() => document.getElementById('gallery')?.scrollIntoView({ behavior: 'smooth' })}
-              className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-orange-500 to-yellow-500 text-white font-medium hover:from-orange-600 hover:to-yellow-600 transition-all shadow-lg shadow-orange-500/30"
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-medium hover:from-blue-600 hover:to-cyan-600 transition-all shadow-lg shadow-blue-500/30"
             >
               View My Work
               <ArrowRight className="w-5 h-5" />

@@ -30,7 +30,7 @@ export default function Layout({ children, currentPageName }) {
             <Link to={createPageUrl('Home')} className="flex items-center gap-3">
               <div className="hidden sm:block">
                 <div className="text-white font-semibold text-lg">Aayan Jafri</div>
-                <div className="text-orange-400 text-xs uppercase tracking-wider">digital portfolio</div>
+                <div className="text-blue-400 text-xs uppercase tracking-wider">digital portfolio</div>
               </div>
             </Link>
 
@@ -44,7 +44,7 @@ export default function Layout({ children, currentPageName }) {
                     to={createPageUrl(item.page)}
                     className={`px-4 py-2 rounded-xl text-sm font-medium transition-all flex items-center gap-2 ${
                       currentPageName === item.page
-                        ? 'bg-gradient-to-r from-orange-500/20 to-yellow-500/20 text-orange-400 border border-orange-500/30'
+                        ? 'bg-gradient-to-r from-blue-500/20 to-cyan-500/20 text-blue-400 border border-blue-500/30'
                         : 'text-white/60 hover:text-white hover:bg-white/5 border border-transparent'
                     }`}
                   >
