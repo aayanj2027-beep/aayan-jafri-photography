@@ -61,12 +61,10 @@ export default function About() {
           className="space-y-4 text-white/70 leading-relaxed mb-12 max-w-3xl"
         >
           <p>
-            Hey! I'm Aayan, a 16-year-old photographer who fell in love with capturing the world through a lens. What started as a hobby has 
-            grown into a passion that I'm now pursuing as a photographer.
+            Hi. I'm Aayan and I'm currently a 16 year old passionate about photography. I love capturing moments in the world and editing them to my specific taste. What started out as a mild pastime has now grown into a passion that I'm pursuing.
           </p>
           <p>
-            I specialize in landscapes and nature photography, but I love experimenting with different styles. Whether I'm chasing golden hour 
-            light, flying my drone for epic aerials, or just exploring my neighborhood with my camera, I'm always looking for that perfect shot.
+            I mostly shoot portrait, but I'm always experimenting with different styles. My love for cars has also made it's way into photography, with most of my best shots being those of cars. Most people criticize me for taking pictures of the most random things, but it's those pictures that always turn out the best.
           </p>
         </motion.div>
 
@@ -149,16 +147,13 @@ export default function About() {
 
           <div className="space-y-6 text-white/70 leading-relaxed">
             <p>
-              My photography journey began with a Canon T1i, learning the fundamentals of exposure, composition, and lighting. 
-              As I grew more passionate, I upgraded to the Canon R10 with professional lenses.
+              My photography journey began with a hand-me-down Canon T1i and a couple kit lenses. I learned the basics of photography on this camera, but as time passed it became the only factor limiting my growth and my results. After 3 years on that camera I upgraded to the much newer Canon R10 with a much better Sigma lens.
             </p>
             <p>
-              Along the way, I discovered my love for automotive photography, urban landscapes, and aerial shots. Each genre 
-              taught me something new about storytelling through images.
+              With this setup being much more "raw", I discovered a new profound joy for editing in Lightroom. I spent hours changing every little dial and button until I liked what I saw.
             </p>
             <p>
-              Today, I continue to push my creative boundaries with every shoot, always searching for unique perspectives 
-              and moments that tell compelling visual stories.
+              Today I continue to explore new styles and perspectives, with my latest interest being astrophotography.
             </p>
           </div>
         </motion.div>
