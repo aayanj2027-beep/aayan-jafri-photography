@@ -8,7 +8,7 @@ export default function About() {
     'Nature & Wildlife',
     'Automotive Photography',
     'Street Photography',
-    'Golden Hour Chasing',
+    'Astrophotography',
     'Photo Editing',
   ];
 
