@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { createPageUrl } from '@/utils';
-import { Camera, Instagram, Mail } from 'lucide-react';
+import { Camera, Instagram, Mail, Image, Settings, User } from 'lucide-react';
 
 export default function Layout({ children, currentPageName }) {
   const navItems = [
-    { name: 'Portfolio', page: 'Home' },
-    { name: 'Gear', page: 'Gear' },
-    { name: 'About', page: 'About' },
+    { name: 'Portfolio', page: 'Home', icon: Image },
+    { name: 'Gear', page: 'Gear', icon: Settings },
+    { name: 'About', page: 'About', icon: User },
   ];
 
   return (
@@ -36,19 +36,23 @@ export default function Layout({ children, currentPageName }) {
 
             {/* Navigation */}
             <nav className="flex items-center gap-2">
-              {navItems.map((item) => (
-                <Link
-                  key={item.page}
-                  to={createPageUrl(item.page)}
-                  className={`px-4 py-2 rounded-xl text-sm font-medium transition-all ${
-                    currentPageName === item.page
-                      ? 'bg-gradient-to-r from-orange-500/20 to-yellow-500/20 text-orange-400 border border-orange-500/30'
-                      : 'text-white/60 hover:text-white hover:bg-white/5 border border-transparent'
-                  }`}
-                >
-                  {item.name}
-                </Link>
-              ))}
+              {navItems.map((item) => {
+                const Icon = item.icon;
+                return (
+                  <Link
+                    key={item.page}
+                    to={createPageUrl(item.page)}
+                    className={`px-4 py-2 rounded-xl text-sm font-medium transition-all flex items-center gap-2 ${
+                      currentPageName === item.page
+                        ? 'bg-gradient-to-r from-orange-500/20 to-yellow-500/20 text-orange-400 border border-orange-500/30'
+                        : 'text-white/60 hover:text-white hover:bg-white/5 border border-transparent'
+                    }`}
+                  >
+                    <Icon className="w-4 h-4" />
+                    {item.name}
+                  </Link>
+                );
+              })}
             </nav>
 
             {/* Social Links */}
