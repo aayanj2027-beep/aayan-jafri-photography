@@ -28,9 +28,6 @@ export default function Layout({ children, currentPageName }) {
           <div className="px-6 py-4 flex items-center justify-between">
             {/* Logo */}
             <Link to={createPageUrl('Home')} className="flex items-center gap-3">
-              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-orange-500 to-yellow-500 flex items-center justify-center shadow-lg shadow-orange-500/20">
-                <Camera className="w-6 h-6 text-white" />
-              </div>
               <div className="hidden sm:block">
                 <div className="text-white font-semibold text-lg">Aayan Jafri</div>
                 <div className="text-orange-400 text-xs uppercase tracking-wider">digital portfolio</div>
