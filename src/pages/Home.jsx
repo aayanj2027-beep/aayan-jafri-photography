@@ -66,8 +66,7 @@ export default function Home() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="text-lg text-white/60 max-w-2xl mx-auto mb-10"
           >
-            Hey, I'm Aayan! A hobbyist photographer passionate about capturing 
-            landscapes, nature, and aerial perspectives. Every frame tells a story.
+            Some of my best pictures
           </motion.p>
 
           {/* CTA Button */}
