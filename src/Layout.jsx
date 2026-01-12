@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { createPageUrl } from '@/utils';
 import { Camera, Instagram, Mail, Image, Settings, User } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 export default function Layout({ children, currentPageName }) {
   const navItems = [
@@ -10,8 +11,43 @@ export default function Layout({ children, currentPageName }) {
     { name: 'About', page: 'About', icon: User },
   ];
 
+  const stars = Array.from({ length: 100 }, (_, i) => ({
+    id: i,
+    x: Math.random() * 100,
+    y: Math.random() * 100,
+    size: Math.random() * 2 + 0.5,
+    duration: Math.random() * 20 + 10,
+    delay: Math.random() * 5,
+  }));
+
   return (
     <div className="min-h-screen bg-black text-white overflow-x-hidden">
+      {/* Moving Stars */}
+      <div className="fixed inset-0 pointer-events-none overflow-hidden">
+        {stars.map((star) => (
+          <motion.div
+            key={star.id}
+            className="absolute rounded-full bg-white"
+            style={{
+              left: `${star.x}%`,
+              top: `${star.y}%`,
+              width: `${star.size}px`,
+              height: `${star.size}px`,
+            }}
+            animate={{
+              opacity: [0.1, 0.4, 0.1],
+              y: [0, -30, 0],
+            }}
+            transition={{
+              duration: star.duration,
+              repeat: Infinity,
+              delay: star.delay,
+              ease: "linear",
+            }}
+          />
+        ))}
+      </div>
+      
       {/* Grayish-blueish gradient background */}
       <div className="fixed inset-0 pointer-events-none overflow-hidden">
         <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-slate-600/10 rounded-full blur-[150px]" />
